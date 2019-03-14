@@ -2,13 +2,13 @@
 
 int main(void) 
 {
-	char str[50];
+	char s[50];
 	int i,count=0;
 	printf("enter the sentence:");
-	scanf("%[^\n]s",str);
-	for(i=0;str[i]!='\0';i++)
+	scanf("%[^\n]s",s);
+	for(i=0;s[i]!='\0';i++)
 	{
-		if(!((str[i]>='0' && str[i]<='9')||(str[i]>='a' && str[i]<='z')))
+		if(!((s[i]>='0' && s[i]<='9')||(s[i]>='a' && s[i]<='z')))
 		{
 			count=count+1;
 		}
